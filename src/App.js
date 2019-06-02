@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Header from './Header/Header';
-import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { increment, decrement, fetchMovies} from './actions';
 import withMovies from './HOC/withMovies';
 import Content from './Content/Content';
+import Footer from './Footer/Footer';
 
 class App extends Component {
   render() {
@@ -12,6 +12,7 @@ class App extends Component {
       <div>
        <Header/>
        <Content/>
+       <Footer/>
       </div>
     );
   }
