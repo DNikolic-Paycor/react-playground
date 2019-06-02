@@ -1,28 +1,12 @@
 import React from 'react';
-import './Footer.css'
-import { connect } from 'react-redux'
-import { fetchMovies} from '../actions';
-import withMovies from '../HOC/withMovies'
+import './Footer.css';
 
-class Footer extends React.Component {
-    render(){
-        console.log("THIS PROPS FROM FOOTER", this.props)
+const Footer = () => {
     return(
         <div className="footer">
-            <p>Footer je funkcionalana komponenta</p>
+            <p>Hvala sto posecujete bazu filmova</p>
+            <p>App je slobodan i sluzi za potrebe skole koda</p>
         </div>
     ); 
 }
-}
-const mapStateToProps = state => ({
-    movies: state.movies.movies
-  });
-  
-  const mapDispatchToProps = {
-    fetchMovies
-  };
-  
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(withMovies(Footer));
+export default Footer;
