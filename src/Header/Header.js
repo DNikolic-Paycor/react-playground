@@ -13,8 +13,8 @@ class Header extends Component {
         return(
             <div style={{backgroundColor:"yellow"}}>
                 <h1>Welcome to Movies API</h1>
-                <input type="text"></input>
-                <input type="text"></input>
+                <label>USERNAME</label><input type="text"></input>
+                <label>PASSWORD</label><input type="text"></input>
                 <button onClick={this.logika} type="button">Log in</button>
             </div>
         );
